@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .heading-1-big {
+    @apply font-dm-serif-display;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  .heading-1-small {
+    @apply font-dm-serif-display;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .heading-2 {
+    @apply font-dm-serif-display;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .heading-3-big {
+    @apply font-dm-serif-display;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .heading-3-small {
+    @apply font-dm-serif-display;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+  .heading-4 {
+    @apply font-dm-serif-display;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .body-copy-1{
+      @apply font-public-sans;
+      font-size: 0.938rem;
+      line-height: 1.75rem;
+  }
+}
