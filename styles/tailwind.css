@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
   .heading-1-big {
     @apply font-dm-serif-display;
     font-size: 4.5rem;
@@ -33,9 +33,20 @@
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  .body-copy-1{
-      @apply font-public-sans;
-      font-size: 0.938rem;
-      line-height: 1.75rem;
+  .body-copy-1 {
+    @apply font-public-sans;
+    font-size: 0.938rem;
+    line-height: 1.75rem;
+  }
+}
+@layer components {
+  .btn {
+    @apply font-public-sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.11538461595773697px;
+    text-align: left;
   }
 }
