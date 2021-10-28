@@ -114,12 +114,6 @@
     background-color: #ffffff;
   }
 
-  input[type="checkbox"]:checked {
-    @apply font-public-sans;
-    height: 24px;
-    background-color: red;
-    width: 24px;
-  }
   /* form start */
   .form-container{
    padding:auto;
@@ -167,5 +161,8 @@
   }
   .inputfield-secondary{
     padding-top:var(--input-padding);
+  }
+  .checkbox {
+    @apply font-public-sans form-checkbox h-5 w-5 text-pink-600 focus:outline-none focus:ring-transparent bg-gray-300;
   }
 }
