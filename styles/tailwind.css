@@ -42,11 +42,130 @@
 @layer components {
   .btn {
     @apply font-public-sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: -0.11538461595773697px;
-    text-align: left;
+    --btn-font-size: 0.938rem;
+    --btn-font-style: normal;
+    --btn-font-weight: 700;
+    --btn-line-height: 1.125rem;
+    --btn-background-color: #ba4270;
+    --btn-letter-spacing: -0.007rem;
+    --btn-text-align: left;
+    --btn-padding: 1rem 1.531rem 0.875rem 1.656rem;
+    --btn-border-radius: 1.5rem;
+    --btn-color: #fbfcfe;
+    --btn-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    --btn-hover-background-color: #da6d97;
+    --btn-border: none;
+    --btn-box-sizing: border-box;
+
+    font-size: var(--btn-font-size);
+    font-style: var(--btn-font-style);
+    font-weight: var(--btn-font-weight);
+    line-height: var(--btn-line-height);
+    background-color: var(--btn-background-color);
+    letter-spacing: var(--btn-letter-spacing);
+    text-align: var(--btn-text-align);
+    padding: var(--btn-padding);
+    border-radius: var(--btn-border-radius);
+    color: var(--btn-color);
+    border: var(--btn-border);
+    box-sizing: var(--btn-box-sizing);
+  }
+  .btn-active:hover {
+    background-color: var(--btn-hover-background-color);
+  }
+  .btn-disabled:disabled {
+    pointer-events: none;
+    mix-blemd-mode: normal;
+    opacity: 0.5;
+  }
+  /* second button start */
+  .btn-secondary {
+    @apply font-public-sans;
+    --btn-color: #fbfcfe;
+    --btn-background-color: #1b262f;
+    --btn-border: 0.063rem solid #fbfcfe;
+  }
+  .btn-secondary:hover {
+    --btn-hover-background-color: #ffffff;
+    --btn-color: #1b262f;
+    --btn-border: 1px solid;
+    background-color: var(--btn-hover-background-color);
+  }
+  .btn-secondary:disabled {
+    color: #6c8294;
+    pointer-events: none;
+  }
+  /* start of third button */
+  .btn-third {
+    @apply font-public-sans;
+    --btn-background-color: #ffffff;
+    --btn-color: #36536b;
+    --btn-border: 0.063rem solid #36536b;
+    border-radius: var(--btn-border-radius);
+  }
+  .btn-third:hover {
+    --btn-color: #ffffff;
+    background-color: #36536b;
+  }
+  .btn-third:disabled {
+    pointer-events: none;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    background-color: #ffffff;
+  }
+
+  input[type="checkbox"]:checked {
+    @apply font-public-sans;
+    height: 24px;
+    background-color: red;
+    width: 24px;
+  }
+  /* form start */
+  .form-container{
+   padding:auto;
+  }
+  .form-label {
+    @apply font-public-sans;
+    --form-label-padding:20px;
+    --form-label-font-style:normal;
+    --form-label-fontsize:15px;
+    --form-label-font-weight:400;
+    --form-label-line-height:25px;
+    --form-label-letter-spacing:-0.11538461595773697px;
+    --form-label-text-align:left;
+    --form-label-mix-blend:normal;
+    --form-label-opacity:0.5;
+    padding-left: var(--form-label-padding);
+    font-size: var(--form-label-fontsize);
+    font-style: var(--form-label-font-style);
+    font-weight: var(--form-label-font-weight);
+    line-height: var(--font-label-line-height);
+    letter-spacing: var(--form-label-letter-spacing);
+    text-align: var(--form-label-text-align);
+    mix-blend-mode: var(--form-label-mix-blend);
+    opacity: var(--form-label-opacity);
+  }
+  .inputfield {
+    
+    @apply font-public-sans;
+    --input-field:block;
+    --input-field-border-bottom:1px solid #36536b;
+    --input-field-fontsize:1rem;
+    --input-field-font-weight:400;
+    --input-line-height:25px;
+    --input-letter-spacing:-0.11538461595773697px;
+    --input-padding:20px;
+    --input-outline:none;
+    display: var(--input-field);
+    border-bottom: var(--input-field-border-bottom);
+    font-size: var(--input-field-fontsize);
+    font-weight: var(--input-field-font-weight);
+    line-height:var(--input-line-height);
+    letter-spacing: var(--input-letter-spacing);
+    padding-left: var(--input-padding);
+    outline: var(--input-outline);
+  }
+  .inputfield-secondary{
+    padding-top:var(--input-padding);
   }
 }
