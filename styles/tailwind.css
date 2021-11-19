@@ -26,33 +26,36 @@
   }
 }
 @layer components {
-  .btn {
-    @apply pr-6.125 pl-6.625 pt-4 pb-3.5 font-public-sans text-3.75 font-bold leading-4.407 -tracking-0.03 text-left  rounded-3xl bg-primary-pink text-primary-white;
+  .btn{
+   @apply pr-6.125 pl-6.625 pt-4 pb-3.5 font-public-sans text-3.75 rounded-3xl font-bold leading-4.407 -tracking-0.03 text-left;
   }
-  .btn:hover {
+  .btn--primary {
+    @apply  bg-primary-pink text-primary-white;
+  }
+  .btn--primary:hover {
     @apply bg-secondary-charm-pink;
   }
-  .btn:disabled {
+  .btn--primary:disabled {
     @apply pointer-events-none opacity-50 mix-blend-normal;
   }
   /* second button start */
-  .btn-secondary {
-    @apply font-public-sans text-primary-white bg-secondary-mirage-blue rounded-3xl border-solid border border-primary-white;
+  .btn--secondary {
+    @apply  text-primary-white bg-secondary-mirage-blue border-solid border border-primary-white;
   }
-  .btn-secondary:hover {
+  .btn--secondary:hover {
     @apply  bg-white text-secondary-mirage-blue border-0;
   }
-  .btn-secondary:disabled {
+  .btn--secondary:disabled {
     @apply  pointer-events-none text-secondary-light-san-juan-blue;
   }
   /* start of third button */
-  .btn-third {
+  .btn--tertiary {
     @apply font-public-sans rounded-3xl border-solid border-b border-secondary-san-juan-blue bg-white text-secondary-san-juan-blue;
     }
-  .btn-third:hover {
+  .btn--tertiary:hover {
     @apply text-primary-white border-secondary-light-san-juan-blue bg-secondary-san-juan-blue;
   }
-  .btn-third:disabled {
+  .btn--tertiary:disabled {
     @apply pointer-events-none mix-blend-normal opacity-50 bg-white; 
   }
   /* form start */
@@ -62,7 +65,7 @@
   .inputfield {
     @apply font-public-sans block border-b leading-6.25 border-solid  text-base font-normal -tracking-0.03 pl-5 outline-none border-secondary-san-juan-blue;
   }
-  .form-label-secondary {
+  .form-label--secondary {
     @apply pt-6;
   }
   .checkbox {
