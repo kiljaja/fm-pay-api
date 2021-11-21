@@ -2,7 +2,13 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
+    screens: {
+      'sm' : '375px',
+      'md': '768px',
+      'laptop-large': '1440px',
+      // => @media (min-width: 14404px) { ... }
+    },
+      extend: {
       fontFamily:{
         "dm-serif-display": ['DM Serif Display', 'serif'],
         "public-sans": ['Public Sans', 'sans-serif']
@@ -11,7 +17,8 @@ module.exports = {
         '-0.03': '-0.007rem',
         '-0.063': '-0.016rem',
         '-0.07': '-0.018rem',
-        
+        '-0.092': '-0.023rem',
+        '-0.138': '-0.034rem',
       },
       lineHeight:{
         '4.407': '1.102rem',
@@ -29,6 +36,7 @@ module.exports = {
         '9.75': '2.438rem',
         '11.322': '2.831rem',
         '19.75': '4.938rem',
+        '136.5': '34.125rem',
       },
       fontSize:{
         '3.75': '0.938rem',
@@ -50,7 +58,9 @@ module.exports = {
           "light-san-juan-blue": "#6c8294",
           "Isabelline" : "#EDF3F8",
         },
-         
+        zIndex: {
+          '-10': '-10',
+         },
       }
     },
   },
