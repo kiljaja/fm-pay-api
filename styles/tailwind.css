@@ -69,6 +69,9 @@
     @apply pt-6;
   }
   .checkbox {
-    @apply font-public-sans form-checkbox h-5 w-5 focus:outline-none focus:ring-transparent text-pink-600 bg-gray-300;
+    @apply font-public-sans form-checkbox h-5 w-5 focus:outline-none focus:ring-transparent text-secondary-Isabelline bg-secondary-Isabelline border-none;
+  }
+  .checkbox:checked + .label {
+    @apply opacity-50;
   }
 }
