@@ -50,7 +50,7 @@
   }
   /* start of third button */
   .btn--tertiary {
-    @apply font-public-sans rounded-3xl border-solid border-b border-secondary-san-juan-blue bg-white text-secondary-san-juan-blue;
+    @apply font-public-sans rounded-3xl border-solid border border-secondary-san-juan-blue bg-primary-white text-secondary-san-juan-blue;
     }
   .btn--tertiary:hover {
     @apply text-primary-white border-secondary-light-san-juan-blue bg-secondary-san-juan-blue;
