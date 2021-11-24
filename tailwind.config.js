@@ -8,6 +8,9 @@ module.exports = {
       'laptop-large': '1440px',
       // => @media (min-width: 14404px) { ... }
     },
+    boxShadow: { 
+      'inputshadow' : '10px 10px 25px -10px rgba(54, 83, 107, 0.25)',
+    },
       extend: {
       fontFamily:{
         "dm-serif-display": ['DM Serif Display', 'serif'],
@@ -42,9 +45,6 @@ module.exports = {
         '3.75': '0.938rem',
         '8': '2rem',
         '14' : '3.5rem',
-      },
-      boxShadow:{
-        "btn-shadow": "10px 10px 25px -10px rgba(54, 83, 107, 0.25)",
       },
       colors:{
         primary:{
