@@ -50,7 +50,7 @@
   }
   /* start of third button */
   .btn--tertiary {
-    @apply font-public-sans rounded-3xl border-solid border-b border-secondary-san-juan-blue bg-white text-secondary-san-juan-blue;
+    @apply font-public-sans rounded-3xl border-solid border border-secondary-san-juan-blue bg-secondary-Isabelline text-secondary-san-juan-blue;
     }
   .btn--tertiary:hover {
     @apply text-primary-white border-secondary-light-san-juan-blue bg-secondary-san-juan-blue;
@@ -60,7 +60,7 @@
   }
   /* form start */
   .form-label {
-    @apply font-public-sans p-5 text-3.75 font-normal leading-6.25 -tracking-0.03 text-left mix-blend-normal opacity-50;
+    @apply font-public-sans text-base font-normal leading-7 text-secondary-san-juan-blue;
   }
   .inputfield {
     @apply font-public-sans block border-b leading-6.25 border-solid  text-base font-normal -tracking-0.03 pl-5 outline-none border-secondary-san-juan-blue;
@@ -69,6 +69,9 @@
     @apply pt-6;
   }
   .checkbox {
-    @apply font-public-sans form-checkbox h-5 w-5 focus:outline-none focus:ring-transparent text-pink-600 bg-gray-300;
+    @apply font-public-sans;
+  }
+  .checkbox:checked + .form-label {
+    @apply opacity-50;
   }
 }

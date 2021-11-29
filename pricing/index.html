@@ -14,16 +14,279 @@
 </head>
 
 <body>
-  <!-- TODO:for testing please replace with proper header/nav -->
-  <nav class="mb-4">
-    <ul class="flex space-x-4 w-full max-w-screen-sm mx-auto">
-      <li><a href="/">home</a></li>
-      <li><a href="/pricing/">pricing</a></li>
-      <li><a href="/about/">about</a></li>
-      <li><a href="/contact/">contact</a></li>
+  <div class="bg-secondary-Isabelline">
+    <div
+      class="
+        grid grid-flow-col
+        px-6
+        md:px-10
+        lg:px-40
+        pt-10
+        laptop-large:px-40
+      "
+    >
+      <ul
+        class="
+          body-copy-1
+          flex
+          items-center
+          leading-4.407
+          opacity-70
+          font-bold
+          text-secondary-san-juan-blue
+        "
+      >
+        <li class="pr-10">
+          <img src="/assets/shared/desktop/logo.svg" alt="" />
+        </li>
+        <li class="hidden md:block pl-5 pr-10"><a href="/pricing/" target="_blank">Pricing</a></li>
+        <li class="hidden md:block pr-10"><a href="/about/" target="_blank">About</a></li>
+        <li class="hidden md:block"><a href="/contact/" target="_blank">Contact</a></li>
+      </ul>
+      <div class="hidden md:flex justify-end items-center">
+        <button class="btn btn--primary">Shedule a Demo</button>
+      </div>
+      <div class="md:hidden flex justify-end items-center">
+        <img src="/assets/shared/mobile/menu.svg" alt="" />
+      </div>
+    </div>
+    <div class="w-full text-center laptop-large:text-left laptop-large:pl-40 py-12">
+      <p class="heading-3-big text-14 leading-14 text-secondary-san-juan-blue">Pricing</p>
+    </div>
+
+    <section class="md:flex px-6 md:px-10 laptop-large:px-40">
+    <form class="flex flex-col text-center laptop-large:text-left items-center laptop-large:items-start">
+        <h2 class="heading-4 text-8 leading-10 -tracking-0.045 pb-4 text-secondary-charm-pink">
+        Free Plan
+        </h2>
+       <p class="body-copy-1 pb-2 text-secondary-light-san-juan-blue"> Build and test using our core set of products with up to 100 API requests </p>
+      <span class="heading-1-small -tracking-0.107 pb-6 text-secondary-san-juan-blue">
+        $0.00
+      </span>
+      <div class="w-full h-px opacity-25 md:mb-2 bg-secondary-san-juan-blue">
+      </div>
+      <ul class="flex flex-col py-6 items-baseline">
+      <li class="">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <label for="" class="form-label">Transactions</label>
+      </li>
+      <li class=" pt-2">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <label for="" class="form-label">Auth</label>
+      </li>
+      <li class=" pt-2">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <label for="" class="form-label">Identity</label>
+      </li>
+      <li class=" pt-2">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <label for="" class="form-label">Investments</label>
+      </li>
+      <li class=" pt-2">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <label for="" class="form-label">Assets</label>
+      </li>
+      <li class=" pt-2">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <label for="" class="form-label">Liabilities</label>
+      </li>
+      <li class=" pt-2">
+        <input type="checkbox" class="checkbox" name="" id="">
+        <label for="" class="form-label">Income</label>
+      </li>
     </ul>
-  </nav>
-  <h1>Pricing Page</h1>
+    <div class="w-full h-px mb-6 opacity-25 bg-secondary-san-juan-blue">
+    </div>
+    <button class="btn btn--tertiary mb-20">Request Access</button>
+    </form>
+
+    <form class="flex flex-col text-center laptop-large:text-left items-center laptop-large:items-start px-2 laptop-large:px-8">
+      <h2 class="heading-4 text-8 leading-10 -tracking-0.045 pb-4 text-secondary-charm-pink">
+      Basic Plan
+      </h2>
+     <p class="body-copy-1 pb-2 text-secondary-light-san-juan-blue"> Launch your project with unlimited requests and no contractual minimums  </p>
+    <span class="heading-1-small -tracking-0.107 pb-6 text-secondary-san-juan-blue">
+      $249.00
+    </span>
+    <div class="w-full h-px opacity-25 bg-secondary-san-juan-blue">
+    </div>
+    <ul class="flex flex-col py-6 items-start">
+    <li class=" pt-2">
+      <input type="checkbox" class="checkbox" name="" id="">
+      <label for="" class="form-label">Transactions</label>
+    </li>
+    <li class=" pt-2">
+      <input type="checkbox" class="checkbox" name="" id="">
+      <label for="" class="form-label">Auth</label>
+    </li>
+    <li class=" pt-2">
+      <input type="checkbox" class="checkbox" name="" id="">
+      <label for="" class="form-label">Identity</label>
+    </li>
+    <li class=" pt-2">
+      <input type="checkbox" class="checkbox" name="" id="">
+      <label for="" class="form-label">Investments</label>
+    </li>
+    <li class=" pt-2">
+      <input type="checkbox" class="checkbox" name="" id="">
+      <label for="" class="form-label">Assets</label>
+    </li>
+    <li class=" pt-2">
+      <input type="checkbox" class="checkbox" name="" id="">
+      <label for="" class="form-label">Liabilities</label>
+    </li>
+    <li class=" pt-2">
+      <input type="checkbox" class="checkbox" name="" id="">
+      <label for="" class="form-label">Income</label>
+    </li>
+  </ul>
+  <div class="w-full h-px mb-6 opacity-25 bg-secondary-san-juan-blue">
+  </div>
+  <button class="btn btn--tertiary mb-20">Request Access</button>
+  </form>
+
+
+  <form class="flex flex-col text-center laptop-large:text-left items-center laptop-large:items-start ">
+    <h2 class="heading-4 text-8 leading-10 -tracking-0.045 pb-4 text-secondary-charm-pink">
+    Premium Plan
+    </h2>
+   <p class="body-copy-1 pb-2 text-secondary-light-san-juan-blue"> Get tailored solutions, volume pricing, and dedicated support for your team  </p>
+  <span class="heading-1-small -tracking-0.107 pb-6 text-secondary-san-juan-blue">
+    $499.00
+  </span>
+  <div class="w-full h-px opacity-25 bg-secondary-san-juan-blue">
+  </div>
+  <ul class="flex flex-col py-6 items-start">
+  <li class=" pt-2">
+    <input type="checkbox" class="checkbox" name="" id="">
+    <label for="" class="form-label">Transactions</label>
+  </li>
+  <li class=" pt-2">
+    <input type="checkbox" class="checkbox" name="" id="">
+    <label for="" class="form-label">Auth</label>
+  </li>
+  <li class=" pt-2">
+    <input type="checkbox" class="checkbox" name="" id="">
+    <label for="" class="form-label">Identity</label>
+  </li>
+  <li class=" pt-2">
+    <input type="checkbox" class="checkbox" name="" id="">
+    <label for="" class="form-label">Investments</label>
+  </li>
+  <li class=" pt-2">
+    <input type="checkbox" class="checkbox" name="" id="">
+    <label for="" class="form-label">Assets</label>
+  </li>
+  <li class=" pt-2">
+    <input type="checkbox" class="checkbox" name="" id="">
+    <label for="" class="form-label">Liabilities</label>
+  </li>
+  <li class=" pt-2">
+    <input type="checkbox" class="checkbox" name="" id="">
+    <label for="" class="form-label">Income</label>
+  </li>
+</ul>
+<div class="w-full h-px mb-6 opacity-25 bg-secondary-san-juan-blue">
+</div>
+<button class="btn btn--tertiary mb-20">Request Access</button>
+</form>
+   </section>
+
+    <div
+      class="
+        flex flex-col
+        laptop-large:flex-row laptop-large:justify-between
+        justify-center
+        laptop-large:px-40
+        items-center
+        px-6
+        pb-20
+      "
+    >
+      <p
+        class="
+          heading-3-big
+          md:text-5xl md:leading-14
+          laptop-large:w-1/2
+          text-secondary-san-juan-blue
+        "
+      >
+        Ready to start?
+      </p>
+      <form class="w-full md:px-40 laptop-large:px-0 md:flex md:justify-end">
+        <input class="
+        shadow-inputshadow
+              body-copy-1
+              md:max-w-md
+              pt-4
+              pr-6.125
+              pb-3.5
+              pl-6.625
+              md:py-2
+              mt-6
+              rounded-3xl
+              w-full
+              bg-white
+            " type="email" placeholder="Enter email address" />
+        <button class="
+              btn btn--primary
+              md:absolute
+              text-center
+              mt-4
+              md:pt-3.5 md:pr-6.125 md:pb-3.5 md:pl-6.625 md:mt-6
+              w-full
+              md:w-max
+            ">
+          Schedule a Demo
+        </button>
+      </form> 
+    </div>
+
+    <footer class="
+        flex flex-col
+        md:justify-between md:flex-row
+        items-center
+        md:pt-8 md:px-10
+        laptop-large:px-40
+        pt-10
+        md:pb-8
+        bg-secondary-mirage-blue
+      ">
+      <ul class="flex flex-col md:flex-row items-center ">
+        <li><img class="md:pr-16" src="/assets/shared/desktop/logo-white.svg" alt="" /></li>
+        <li class="body-copy-1
+        md:pr-10
+        pb-8
+        md:pb-0
+        pt-10
+        md:pt-0
+        leading-4.407
+        text-primary-white
+        opacity-70"><a  href="/pricing/" target="_blank">Pricing</a></li>
+        <li class="body-copy-1
+        md:pr-10
+        pb-8
+        md:pb-0
+        leading-4.407
+        text-primary-white
+        opacity-70"><a href="/pricing/" target="_blank">about</a></li>
+        <li class="
+        body-copy-1
+        md:pr-10
+        pb-10
+        md:pb-0
+        leading-4.407
+        text-primary-white
+        opacity-70
+      "><a href="/contact/" target="_blank">Contact</a></li>
+    </ul>
+    <div class="flex md:justify-start gap-6.125 pb-14 md:pb-0">
+      <img src="/assets/shared/desktop/facebook.svg" alt="" />
+      <img src="/assets/shared/desktop/twitter.svg" alt="" />
+      <img src="/assets/shared/desktop/linkedin.svg" alt="" />
+    </div>
+  </footer>
+  </div>
 </body>
 
 </html>
